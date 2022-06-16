@@ -5,9 +5,9 @@
 
 - name: create database
   community.mysql.mysql_db:
-    login_host: "terraform-2022061209234475800000000c.cvyrpdhgqalj.us-east-1.rds.amazonaws.com"
-    login_user: "admin12345"
-    login_password: "admin12345"
+    login_host: "terraform-20220616100836058700000001.ctzmlixwicc8.us-east-1.rds.amazonaws.com"
+    login_user: "moses"
+    login_password: "moses12345"
     name: wordpressdb
     collation: utf8_general_ci
     encoding: utf8
@@ -21,8 +21,8 @@
   loop:
     - {
         regexp: "^localhost",
-        line: "terraform-2022061209234475800000000c.cvyrpdhgqalj.us-east-1.rds.amazonaws.com",
+        line: "terraform-20220616100836058700000001.ctzmlixwicc8.us-east-1.rds.amazonaws.com",
       }
-    - { regexp: "^username_here", line: "admin12345" }
-    - { regexp: "^database_name_here", line: "Doeita-db" }
-    - { regexp: "^password_here", line: "admin12345" }
+    - { regexp: "^username_here", line: "moses" }
+    - { regexp: "^database_name_here", line: "wordpressdb" }
+    - { regexp: "^password_here", line: "moses12345" }
