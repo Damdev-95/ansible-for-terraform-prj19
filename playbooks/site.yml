@@ -17,7 +17,7 @@
 
 - hosts: tag_Name_ACS_artifactory
 - name: artifactory assignment
-   import_playbook: ../static-assignments/artifactory.yml
+  import_playbook: ../static-assignments/artifactory.yml
 
 - hosts: tag_Name_ACS_sonarqube
   user: ubuntu
